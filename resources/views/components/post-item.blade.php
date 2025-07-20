@@ -5,5 +5,5 @@
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $post->title }}</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ Str::words($post->content, 20) }}</p>
     </div>
-    <img class="object-cover w-full rounded h-48 md:h-auto md:w-48 md:rounded-none" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+    <img class="object-cover w-full rounded h-48 md:h-auto md:w-48 md:rounded-none" src="{{ Storage::url($post->image) }}" alt="">
 </a>
